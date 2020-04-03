@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetHArd</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #222f3e;
+        }
+        .färg{
+            font-family: 'Times New Roman', Times, serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 10px;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 200px;
+            text-transform: uppercase;
+            cursor: pointer;
+            width: 100%;
+            height: 85%;
+        }
+        a{
+            margin-left: 50%;
+            margin-right: 50%;
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<button class="färg">Vi Vill Ge Dig Bästa Dealen</button>
+
+<a href="Mobiler.html">Fortsätt</a>
+    <script>
+        var color = ["#242d3c", "#ac3e54", "#698ba2", "#372853", "#e89122", "#232524"]
+        var i = 0; 
+            document.querySelector("button").addEventListener("click", function(){
+                if(i==5){
+                     i=0;
+            }
+             i++; 
+            document.querySelector("body").style.backgroundColor = color[i];
+            console.log(i);
+            } )
+</script>
+</body>
+</html>
